@@ -34,6 +34,10 @@ return require('packer').startup(function(use)
             require("configs.autopairs")
         end,
     })
+    use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
   -- Treesitter
     use({
         "nvim-treesitter/nvim-treesitter",
@@ -84,7 +88,7 @@ return require('packer').startup(function(use)
 
     use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
 
-
+    use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
     -- Mason: Portable package manager
     use({
         "williamboman/mason.nvim",

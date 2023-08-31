@@ -114,6 +114,8 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         },
     })
+  -- some advanced java crap
+  use 'mfussenegger/nvim-jdtls'
   -- clang-format support
   use "rhysd/vim-clang-format"
   -- Terminal

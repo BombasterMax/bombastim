@@ -59,8 +59,5 @@ nvim_lsp.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
--- java
-nvim_lsp.jdtls.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-})
+
+

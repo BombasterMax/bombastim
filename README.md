@@ -25,6 +25,7 @@ but don't want to spend hoursin config files yourself.
     - bashls
     - texlab
     - rust
+    - java
 - treesitter
 - telescope
 - auto-completion

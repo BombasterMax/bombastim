@@ -8,7 +8,7 @@ but don't want to spend hoursin config files yourself.
 ## How to use:
 
 1. Clone a repo to a ~/.config/nvim folder.
-1. Install Packer: plugin manager for nvim https://github.com/wbthomason/packer.neovim
+1. Install Packer: plugin manager for nvim https://github.com/wbthomason/packer.nvim
 1. Packer will install most plugins by itself. But you may still need to install some packages (zathura, texlive, etc). Just follow the errors you ran into.
 1. You've all done!
 

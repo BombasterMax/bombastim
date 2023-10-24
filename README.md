@@ -31,6 +31,7 @@ but don't want to spend hoursin config files yourself.
 - auto-completion
 - file-manager via neotree
 - pretty bottom line via lualine
+- git signs support
 and much more coming soon.
 ## How to modify?
 

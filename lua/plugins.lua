@@ -89,21 +89,6 @@ return require('packer').startup(function(use)
     use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
 
     use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
-    -- Mason: Portable package manager
-    use({
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end,
-    })
-
-    use({
-        "williamboman/mason-lspconfig.nvim", after = "mason.nvim",
-        config = function()
-            require("configs.mason-lsp")
-        end,
-    })
-
     -- File manager
     use({
         "nvim-neo-tree/neo-tree.nvim",

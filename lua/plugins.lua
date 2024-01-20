@@ -1,14 +1,11 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
--- Only required if you have packer configured as `opt`
+-- Plugins list
 vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
   -- Packer itself
   use 'wbthomason/packer.nvim'
   -- Gruvbox theme
   use { "ellisonleao/gruvbox.nvim" }
-  -- Make background Transparent
+  -- Transparent background
   use({
         "xiyaowong/nvim-transparent",
         config = function()
@@ -25,7 +22,7 @@ return require('packer').startup(function(use)
             })
         end,
     })
-  -- bunch of lua stuff
+  -- other plugins dependence
   use("nvim-lua/plenary.nvim")
   -- Auto pairs
   use({
@@ -50,14 +47,6 @@ return require('packer').startup(function(use)
     })
 
     use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
-
-    -- Telescope
-    use({
-        "nvim-telescope/telescope.nvim",
-        tag = "0.1.1",
-        requires = { { "nvim-lua/plenary.nvim" } },
-    })
-
     -- LSP
     use({
         "neovim/nvim-lspconfig",
@@ -69,8 +58,6 @@ return require('packer').startup(function(use)
     use("onsails/lspkind-nvim")
     use({
         "L3MON4D3/LuaSnip",
-        -- follow latest release.
-        --tag = "v<CurrentMajor>.*",
     })
 
     -- cmp: Autocomplete
@@ -89,21 +76,6 @@ return require('packer').startup(function(use)
     use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
 
     use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
-    -- Mason: Portable package manager
-    use({
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end,
-    })
-
-    use({
-        "williamboman/mason-lspconfig.nvim", after = "mason.nvim",
-        config = function()
-            require("configs.mason-lsp")
-        end,
-    })
-
     -- File manager
     use({
         "nvim-neo-tree/neo-tree.nvim",
@@ -161,12 +133,12 @@ return require('packer').startup(function(use)
 }
   end
 }
+-- comments stuff
+  use 'terrortylor/nvim-comment'
+-- some highlighting shit
+  use 'RRethy/vim-illuminate'
   -- some advanced java crap
   use 'mfussenegger/nvim-jdtls'
   -- clang-format support
   use "rhysd/vim-clang-format"
-  -- Terminal
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-  require("toggleterm").setup()
-end}
 end)

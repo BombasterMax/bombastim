@@ -25,6 +25,7 @@ nvim_lsp.gopls.setup({
 nvim_lsp.pylsp.setup({
   on_attach = on_attach,
   capabilities = capabilities,
+  cmd = {"jedi-language-server"},
 })
 -- bash
 nvim_lsp.bashls.setup({
@@ -60,5 +61,5 @@ nvim_lsp.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
-
-
+-- html
+require'lspconfig'.html.setup{}

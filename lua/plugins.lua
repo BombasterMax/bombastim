@@ -141,4 +141,6 @@ return require('packer').startup(function(use)
   use 'mfussenegger/nvim-jdtls'
   -- clang-format support
   use "rhysd/vim-clang-format"
+  -- typst support
+  use 'kaarmu/typst.vim'
 end)

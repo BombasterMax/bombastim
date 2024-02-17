@@ -63,3 +63,5 @@ nvim_lsp.rust_analyzer.setup({
 })
 -- html
 require'lspconfig'.html.setup{}
+-- typst
+require'lspconfig'.typst_lsp.setup{}

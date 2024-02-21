@@ -65,3 +65,5 @@ nvim_lsp.rust_analyzer.setup({
 require'lspconfig'.html.setup{}
 -- typst
 require'lspconfig'.typst_lsp.setup{}
+-- dockerfile
+require'lspconfig'.dockerls.setup{}

@@ -9,7 +9,7 @@ but don't want to spend hoursin config files yourself.
 
 1. Clone a repo to a ~/.config/nvim folder.
 1. Install Packer: plugin manager for nvim https://github.com/wbthomason/packer.nvim
-1. Packer will install all plugins itself. 
+1. Packer will install all plugins itself. just run :PackerSync.
 1. Make sure you have all binaries (LSP servers, formatters, compilers, etc),
 otherwise you'll get a corresponding error.
 1. You've all done!
@@ -27,6 +27,8 @@ otherwise you'll get a corresponding error.
     - texlab
     - rust
     - java
+    - typst
+    - dockerfile
 - treesitter
 - auto-completion
 - file-manager via neotree

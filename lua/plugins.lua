@@ -76,6 +76,12 @@ return require('packer').startup(function(use)
     use({ "hrsh7th/cmp-buffer", after = "nvim-cmp" })
 
     use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+  -- yazi support
+	use({"DreamMaoMao/yazi.nvim",
+    requires = {
+      "nvim-telescope/telescope.nvim",
+    "nvim-lua/plenary.nvim",},
+    })
     -- File manager
     use({
         "nvim-neo-tree/neo-tree.nvim",

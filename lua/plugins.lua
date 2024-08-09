@@ -3,8 +3,11 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer itself
   use 'wbthomason/packer.nvim'
-  -- Gruvbox theme
+  -- Themes
+  -- Gruvbox
   use { "ellisonleao/gruvbox.nvim" }
+  -- Gruvbox
+  use { "tiagovla/tokyodark.nvim" }
   -- Transparent background
   use({
         "xiyaowong/nvim-transparent",

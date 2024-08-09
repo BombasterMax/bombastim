@@ -2,7 +2,7 @@ require ('plugins')
 require ('settings')
 require ('lualine')
 vim.o.background = "dark" 
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme tokyodark]])
 require('lualine').setup()
 -- custom key bindings
 vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>')

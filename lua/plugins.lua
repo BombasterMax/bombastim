@@ -139,8 +139,6 @@ require('gitsigns').setup {
     col = 1
   },
 }
--- comments stuff
-  use 'terrortylor/nvim-comment'
 -- some highlighting shit
   use 'RRethy/vim-illuminate'
   -- some advanced java crap
